@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+
+<!-- load static -->
+{% load static %}
+
+<!-- title block -->
+{% block titleName %} Computer Shop {% endblock titleName %}
+
+<!-- description block -->
+{% block description %}{% endblock description %}
+
+<!-- keyword block -->
+{% block keyword %}{% endblock keyword %}
+
+<!-- Header Area End Here -->
+{% block header %} {% include "header.html" %} {% endblock header %}
+
+<!-- sidebar block -->
+{% block sidebar %} {% endblock sidebar %}
+
+<!-- slidebar block -->
+{% block slidebar %} {% include 'slider.html' %} {% endblock slidebar %}
+
+<!-- mainbody block -->
+{% block mainbody %} {% include "content.html" %} {% endblock mainbody%}
+
+<!-- Begin Footer Area -->
+{% block footer %} {% include "footer.html" %} {% endblock footer %}

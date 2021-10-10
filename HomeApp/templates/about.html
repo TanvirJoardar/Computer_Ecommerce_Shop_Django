@@ -1,0 +1,66 @@
+{% extends 'index.html' %}
+
+<!-- load static -->
+{% load static %}
+
+<!-- title block -->
+{% block titleName %} Computer Shop {% endblock titleName %}
+
+<!-- description block -->
+{% block description %}{% endblock description %}
+
+<!-- keyword block -->
+{% block keyword %}{% endblock keyword %}
+
+<!-- Header Area End Here -->
+{% block header %} {% include "header.html" %} {% endblock header %}
+
+<!-- product detail block start -->
+
+{% block product_detail %}
+
+<!-- Begin Li's Breadcrumb Area -->
+<div class="breadcrumb-area">
+  <div class="container">
+    <div class="breadcrumb-content">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="active">About Us</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Li's Breadcrumb Area End Here -->
+<!-- about wrapper start -->
+<div class="about-us-wrapper pt-60 pb-40">
+  <div class="container">
+    <div class="row">
+      <!-- About Text Start -->
+      <div class="col-lg-6 order-last order-lg-first">
+        <div class="about-text-wrap">
+          <h2><span>Provide Best</span>Product For You</h2>
+          <p>{{settings.description}}</p>
+        </div>
+      </div>
+      <!-- About Text End -->
+      <!-- About Image Start -->
+      <div class="col-lg-5 col-md-10">
+        <div class="about-image-wrap">
+          <img
+            height="100%"
+            width="100%"
+            src="{{settings.icon.url}}"
+            alt="About Us"
+          />
+        </div>
+      </div>
+      <!-- About Image End -->
+    </div>
+  </div>
+</div>
+<!-- about wrapper end -->
+
+{% endblock product_detail %}
+
+<!-- Begin Footer Area -->
+{% block footer %} {% include "footer.html" %} {% endblock footer %}
